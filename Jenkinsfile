@@ -7,7 +7,8 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Test') {
+      agent any
       steps {
         bat 'echo "Running Tests"'
       }
