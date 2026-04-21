@@ -1,11 +1,11 @@
 pipeline {
-  agent any
-  stages {
-    stage('Build') {
-      steps {
-        bat 'echo "Compiling"'
-      }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                // Use 'sh' for Linux or 'bat' for Windows
+                bat 'echo Hello World' 
+            }
+        }
     }
-
-  }
 }
